@@ -1,4 +1,4 @@
-package main
+package chaisay
 
 import (
 	"github.com/TheChirag356/chaisay/art"
@@ -8,6 +8,13 @@ import (
 type ChaiSay struct {
 	Text     string
 	ArtStyle string
+}
+
+func New(text string, artstyle string) ChaiSay {
+	return ChaiSay{
+		Text:     text,
+		ArtStyle: artstyle,
+	}
 }
 
 func (c *ChaiSay) Print() {

@@ -1,6 +1,6 @@
 # ChaiSay
 
-A simple command-line utility for displaying messages.
+A command-line utility and library that generates ASCII art of a chai (or other beverages) with a message.
 
 ## Installation
 
