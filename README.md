@@ -23,6 +23,11 @@ c := ChaiSay{
 }
 ```
 
+And print the message
+```go
+c.Print()
+```
+
 ## Features
 
 - Display custom messages
