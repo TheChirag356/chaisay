@@ -1,16 +1,17 @@
 package chaisay
 
 import (
+	"fmt"
+
 	"github.com/TheChirag356/chaisay/art"
-	"github.com/TheChirag356/chaisay/textbox"
 )
 
 type ChaiSay struct {
 	Text     string
-	ArtStyle string
+	ArtStyle art.ArtStyle
 }
 
-func New(text string, artstyle string) ChaiSay {
+func New(text string, artstyle art.ArtStyle) ChaiSay {
 	return ChaiSay{
 		Text:     text,
 		ArtStyle: artstyle,
@@ -18,6 +19,6 @@ func New(text string, artstyle string) ChaiSay {
 }
 
 func (c *ChaiSay) Print() {
-	textbox.PrintTextBox(c.Text)
-	art.Art(c.ArtStyle)
+	PrintTextBox(c.Text)
+	fmt.Println(c.ArtStyle)
 }

@@ -1,9 +1,8 @@
 package art
 
-import "fmt"
+type ArtStyle string
 
-var Arts = map[string]string{
-	"CHAI": `
+var CHAI ArtStyle = `
      (  )  (  )  )
      ) (   )  (  (
      ( )  (    ) )
@@ -15,9 +14,9 @@ var Arts = map[string]string{
  ___|             |\___/
 /    \___________/    \
 \_____________________/
-	`,
+	`
 
-	"COFFEE": `
+var COFFEE ArtStyle = `
          ⢀⣀⣠⣤⣤⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣠⡴⠞⣋⣭⣥⡴⢶⡲⣖⡲⢶⡬⣭⣝⡛⠶⣤⡀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢠⡾⠋⣴⣻⡽⣚⡶⣽⣣⢷⣣⣟⠶⣝⡶⣪⣝⡻⣬⠻⣆⡀⠀⠀⠀
@@ -31,9 +30,9 @@ var Arts = map[string]string{
 ⠌⠻⣆⡐⠠⢀⠂⢈⠐⢀⠈⡙⠒⠳⠸⠜⡰⢓⢊⡍⠥⡊⡔⣊⠱⢌⠒⣢⡾⠋
 ⠀⠀⠉⠻⢶⣤⣈⠀⠂⠄⢂⠠⠈⠄⡑⢌⠰⡁⠦⡘⢢⠱⡐⢢⣱⣮⠿⠋⠀⠀
 ⠀⠀⠀⠀⠀⠈⠉⠛⠻⠶⠦⣦⣬⣴⣤⣬⣦⣵⣦⡵⠶⠟⠛⠋⠉⠀⠀⠀⠀⠀
-   `,
-}
+   `
 
-func Art(s string) {
-	fmt.Println(Arts[s])
-}
+var wine ArtStyle = ``
+var beer ArtStyle = ``
+var soda ArtStyle = ``
+var water ArtStyle = ``

@@ -5,14 +5,14 @@ A command-line utility and library that generates ASCII art of a chai (or other 
 ## Installation
 
 ```bash
-go add github.com/TheChirag356/chaisay
+go get github.com/TheChirag356/chaisay
 ```
 
 ## Usage
 
 Import the package in your file
-```
-
+```bash
+import "github.com/TheChirag356/chaisay"
 ```
 
 Create a ChaiSay struct
@@ -31,8 +31,8 @@ c.Print()
 ## Features
 
 - Display custom messages
+- Choose your art from a list of items
 - Simple and lightweight
-- Cross-platform support
 
 ## Contributing
 
